@@ -7,6 +7,38 @@
         <title>Movies List</title>
     </head>
     <body>
+        <div class="wrapper">
+            <header class="header">
+                <div class="header__container">
+                    <div class="title__container title">
+                        <h1 class="title__text">Movies List</h1>
+                    </div>
+                </div>
+            </header>
+            <main class="main">
+                <div class="page__container">
+                    <div class="input__container input">
+                        <input
+                            type="text"
+                            id="add-movie"
+                            class="input-movie"
+                            placeholder="Add movies"
+                        />
+                        <input
+                            type="text"
+                            id="add-source"
+                            class="input-source"
+                            placeholder="Add source"
+                        />
+                        <button class="btn-add">Confirm</button>
+                    </div>
+                </div>
+                <div class="movies__container movies">
+                    <div class="movies-root"></div>
+                </div>
+            </main>
+            <footer class="footer">3</footer>
+        </div>
         <script type="module" src="./src/init.js"></script>
     </body>
 </html>
