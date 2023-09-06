@@ -176,21 +176,35 @@ input:focus {
 
 .movie-container {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 .movies-root {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1.25rem;
     justify-items: center;
-    align-items: stretch;
+    align-items: center;
+    height: 100vh;
+}
+
+.movie-info {
+    width: 16.875rem;
+    height: 28.125rem;
+    background-color: #f0f0f0;
+    text-align: center;
+    border-radius: 1.25rem;
 }
 
 .movie-image {
-    width: 250px;
-    height: 350px;
+    width: 15.625rem;
+    height: 21.875rem;
     object-fit: cover;
+    border-radius: 1.25rem;
     transition: transform 0.3s;
 }
+
 .movie-image:hover {
     transform: scale(1.1);
 }
