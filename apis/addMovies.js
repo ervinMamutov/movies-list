@@ -1,5 +1,6 @@
 import data from '../src/data.js';
-const addMovies = async (titleMovie, sourceMovie) => {
+const addMovies = async (movieInfo) => {
+    console.log(data);
     const encodedUrl = encodeURI(data.baseUrl);
     try {
         const res = await fetch(encodedUrl, {
@@ -7,10 +8,10 @@ const addMovies = async (titleMovie, sourceMovie) => {
             headers: {
                 'Content-type': 'application/json'
             },
-            body: JSON.stringify({ title: titleMovie, src: sourceMovie })
+            body: JSON.stringify(movieInfo)
         });
         if (!res.ok) {
-            throw new Error(`Failed to get photos with status : ${res.status}`);
+            throw new Error(`Failed to add movie with status : ${res.status}`);
         }
         return await res.json();
     } catch (err) {

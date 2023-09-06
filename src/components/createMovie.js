@@ -1,21 +1,19 @@
+import dom from '../dom.js';
 import deleteHeader from '../handlers/deleteHandler.js';
-import editHandler from '../handlers/editHandler.js';
 
-const createMovies = (data) => {
+const createMovies = (movieInfo) => {
     const container = document.createElement('div');
+    container.id = movieInfo.id;
     container.classList.add('movie-info');
 
     const movieImage = document.createElement('img');
     movieImage.classList.add('movie-image');
-    movieImage.src = data.src;
+    movieImage.alt = movieInfo.title;
+    movieImage.src = movieInfo.src;
 
     const movieTitle = document.createElement('h2');
     movieTitle.classList.add('movie-title');
-    movieTitle.innerText = data.title;
-
-    const id = document.createElement('h4');
-    id.classList.add('id');
-    id.innerText = data.id;
+    movieTitle.innerText = movieInfo.title;
 
     const buttonDelete = document.createElement('btn');
     buttonDelete.classList.add('btn-delete');
@@ -28,7 +26,10 @@ const createMovies = (data) => {
     buttonEdit.classList.add('btn-edit');
     buttonEdit.innerText = 'Edit';
     buttonEdit.addEventListener('click', (e) => {
-        editHandler(e);
+        dom.buttonAdd.innerText = 'Edit';
+        container.classList.add('selected');
+        dom.inputMovies.value = movieInfo.title;
+        dom.inputSource.value = movieInfo.src;
     });
 
     const buttonItems = document.createElement('div');
@@ -36,7 +37,7 @@ const createMovies = (data) => {
 
     buttonItems.append(buttonDelete, buttonEdit);
 
-    container.append(movieImage, movieTitle, id, buttonItems);
+    container.append(movieImage, movieTitle, buttonItems);
     return container;
 };
 
