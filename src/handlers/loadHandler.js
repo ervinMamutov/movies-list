@@ -6,7 +6,7 @@ import createLoader from '../components/createLoader.js';
 
 const loadHandler = async () => {
     const loaderDom = createLoader();
-    dom.moviesRoot.append(loaderDom);
+    dom.main.append(loaderDom);
 
     const moviesData = await getMovies();
     const sortMovies = sortById(moviesData);

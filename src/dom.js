@@ -4,6 +4,7 @@ const dom = {
     buttonAdd: document.querySelector('.btn-add'),
     moviesRoot: document.querySelector('.movies-root'),
     error: document.querySelector('.error'),
-    buttonCancel: document.querySelector('.btn-cancel')
+    buttonCancel: document.querySelector('.btn-cancel'),
+    main: document.querySelector('.main')
 };
 export default dom;

@@ -1,6 +1,10 @@
-.loader-container {
-    top: 500%;
-    left: 424%;
+.loader-page {
+    display: flex;
+    justify-content: center; /* Горизонтальное центрирование по горизонтали */
+    align-items: center; /* Вертикальное центрирование по вертикали */
+    height: 100vh;
+    z-index: 50;
+    transform: translate(0%, -30%);
 }
 
 #page {
