@@ -1,0 +1,39 @@
+{
+  "movies": [
+    {
+      "title": "Brave Heart",
+      "src": "./assets/braveHeart.jpeg",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "title": "Cat Women",
+      "src": "./assets/catWomen.webp"
+    },
+    {
+      "title": "IronMan",
+      "src": "./assets/ironman.jpg",
+      "id": 10
+    },
+    {
+      "title": "Spider Man",
+      "src": "./assets/spiderMan2.jpg",
+      "id": 11
+    },
+    {
+      "title": "Limitless",
+      "src": "https://m.media-amazon.com/images/I/51D3X1BSk1L._SX300_SY300_QL70_FMwebp_.jpg",
+      "id": 14
+    },
+    {
+      "title": "terminator",
+      "src": "https://ichef.bbci.co.uk/news/976/cpsprodpb/09C5/production/_130010520_gettyimages-85475547.jpg.webp",
+      "id": 15
+    },
+    {
+      "title": "Freedom",
+      "src": "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/action-movie-poster-template-design-0f5fff6262fdefb855e3a9a3f0fdd361_screen.jpg?ts=1636996054",
+      "id": 16
+    }
+  ]
+}
