@@ -4,4 +4,6 @@ const data = {
 };
 export default data;
 
+/* local url*/
+
 //'http://localhost:5000/movies'
