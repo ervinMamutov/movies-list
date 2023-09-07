@@ -7,6 +7,46 @@
         <title>Movies List</title>
     </head>
     <body>
+        <div class="wrapper">
+            <header class="header">
+                <div class="header__container">
+                    <div class="title__container title">
+                        <h1 class="title__text">Movies List</h1>
+                    </div>
+                </div>
+            </header>
+            <main class="main">
+                <div class="page__container">
+                    <div class="input__container input">
+                        <div class="input-form-title">
+                            <input
+                                type="text"
+                                id="add-movie"
+                                class="input-movie"
+                                placeholder="Add movies"
+                            />
+                        </div>
+                        <div class="input-form-source">
+                            <input
+                                type="text"
+                                id="add-source"
+                                class="input-source"
+                                placeholder="Add source"
+                            />
+                        </div>
+                        <select class="years" name="years" id="years"></select>
+                        <div class="btn-form">
+                            <button class="btn-add">Confirm</button>
+                            <button class="btn-cancel">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="error"></div>
+                <div class="movies__container movies">
+                    <div class="movies-root"></div>
+                </div>
+            </main>
+        </div>
         <script type="module" src="./src/init.js"></script>
     </body>
 </html>
