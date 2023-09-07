@@ -29,7 +29,7 @@ const createMovies = (movieInfo) => {
     const buttonEdit = document.createElement('btn');
     buttonEdit.classList.add('btn-edit');
     buttonEdit.innerText = 'Edit';
-    buttonEdit.addEventListener('click', (e) => {
+    buttonEdit.addEventListener('click', () => {
         dom.buttonAdd.innerText = 'Edit';
         container.classList.add('selected');
         dom.inputMovies.value = movieInfo.title;
