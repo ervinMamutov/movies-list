@@ -1,6 +1,6 @@
 import dom from '../dom.js';
 
-const resetInputHandler = (e) => {
+const resetInputHandler = () => {
     dom.inputMovies.value = '';
     dom.inputSource.value = '';
 };

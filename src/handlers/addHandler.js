@@ -4,7 +4,7 @@ import createMovies from '../components/createMovie.js';
 import updateMovieInfo from '../components/updateMovieInfo.js';
 import editMovie from '../../apis/editMovie.js';
 
-const addHandler = async (e) => {
+const addHandler = async () => {
     const movieInfo = {
         title: dom.inputMovies.value,
         src: dom.inputSource.value,
