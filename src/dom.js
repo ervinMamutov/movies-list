@@ -3,7 +3,7 @@ const dom = {
     inputSource: document.getElementById('add-source'),
     buttonAdd: document.querySelector('.btn-add'),
     moviesRoot: document.querySelector('.movies-root'),
-    error: document.querySelector('.error'),
+    error: document.querySelector('.error__container'),
     buttonCancel: document.querySelector('.btn-cancel'),
     main: document.querySelector('.main'),
     years: document.querySelector('.years')
