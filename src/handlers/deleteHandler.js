@@ -1,11 +1,8 @@
 import deleteMovie from '../../apis/deleteMovie.js';
 
-const deleteHeader = async (e) => {
-    const targetEl = e.target;
-    const inputEl = targetEl.closest('.movie-info');
-    const id = inputEl.id;
-    inputEl.remove();
+const deleteHandler = async (id) => {
+    document.getElementById(id).remove();
     await deleteMovie(id);
 };
 
-export default deleteHeader;
+export default deleteHandler;

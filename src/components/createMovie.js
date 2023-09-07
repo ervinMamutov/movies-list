@@ -6,6 +6,8 @@ const createMovies = (movieInfo) => {
     container.id = movieInfo.id;
     container.classList.add('movie-info');
 
+    const id = movieInfo.id;
+
     const movieImage = document.createElement('img');
     movieImage.classList.add('movie-image');
     movieImage.alt = movieInfo.title;
@@ -23,7 +25,7 @@ const createMovies = (movieInfo) => {
     buttonDelete.classList.add('btn-delete');
     buttonDelete.innerText = 'Delete';
     buttonDelete.addEventListener('click', (e) => {
-        deleteHeader(e);
+        deleteHeader(id);
     });
 
     const buttonEdit = document.createElement('btn');

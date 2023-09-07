@@ -1,9 +1,9 @@
 import data from '../src/data.js';
 
 const editMovie = async (id, updateMovie) => {
-    const encodingUrl = encodeURI(data.baseUrl);
+    const encodingUrl = encodeURI(`${data.baseUrl}/${id}`);
     try {
-        const res = await fetch(`${encodingUrl}/${id}`, {
+        const res = await fetch(encodingUrl, {
             method: 'PUT',
             headers: {
                 'Content-type': 'application/json'

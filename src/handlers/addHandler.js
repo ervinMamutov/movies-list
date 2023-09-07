@@ -25,8 +25,7 @@ const addHandler = async () => {
     dom.error.classList.remove('err');
 
     if (dom.buttonAdd.innerText === 'Confirm') {
-        console.log(movieInfo);
-        const movieData = createMovies(movieInfo, dom);
+        const movieData = createMovies(movieInfo);
         dom.moviesRoot.prepend(movieData);
         await addMovies(movieInfo);
     } else {
@@ -34,7 +33,7 @@ const addHandler = async () => {
         updateMovieInfo(editDom, movieInfo);
         const id = Number(editDom.id);
         await editMovie(id, movieInfo);
-        editDom.classList.remove('.selected');
+        editDom.classList.remove('selected');
         dom.buttonAdd.innerText = 'Confirm';
     }
 

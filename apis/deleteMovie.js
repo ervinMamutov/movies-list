@@ -1,7 +1,6 @@
 import data from '../src/data.js';
 
 const deleteMovie = async (id) => {
-    console.log(id);
     const encodedUrl = encodeURI(`${data.baseUrl}/${id}`);
     try {
         const res = await fetch(encodedUrl, {
