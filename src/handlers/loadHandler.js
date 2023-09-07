@@ -1,7 +1,7 @@
 import dom from '../dom.js';
 import getMovies from '../../apis/getMovies.js';
 import createMovies from '../components/createMovie.js';
-import sortById from '../utils/sortById.js';
+import sortData from '../utils/sortData.js';
 import createLoader from '../components/createLoader.js';
 
 const loadHandler = async () => {
@@ -9,7 +9,8 @@ const loadHandler = async () => {
     dom.main.append(loaderDom);
 
     const moviesData = await getMovies();
-    const sortMovies = sortById(moviesData);
+    const sortMovies = sortData(moviesData, 'id');
+
     if (sortMovies) {
         loaderDom.remove();
         sortMovies.forEach((sortMovie) => {

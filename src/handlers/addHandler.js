@@ -7,8 +7,8 @@ import editMovie from '../../apis/editMovie.js';
 const addHandler = async (e) => {
     const movieInfo = {
         title: dom.inputMovies.value,
-        src: dom.inputSource.value
-        // year: dom.inputYear.value,
+        src: dom.inputSource.value,
+        year: dom.years.value
     };
 
     /* if (!dom.inputMovies.value) {

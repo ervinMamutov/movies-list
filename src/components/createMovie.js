@@ -15,6 +15,10 @@ const createMovies = (movieInfo) => {
     movieTitle.classList.add('movie-title');
     movieTitle.innerText = movieInfo.title;
 
+    const movieYear = document.createElement('h3');
+    movieYear.classList.add('movie-year');
+    movieYear.innerText = movieInfo.year;
+
     const buttonDelete = document.createElement('btn');
     buttonDelete.classList.add('btn-delete');
     buttonDelete.innerText = 'Delete';
@@ -30,6 +34,7 @@ const createMovies = (movieInfo) => {
         container.classList.add('selected');
         dom.inputMovies.value = movieInfo.title;
         dom.inputSource.value = movieInfo.src;
+        dom.years.value = movieInfo.year;
     });
 
     const buttonItems = document.createElement('div');
@@ -37,7 +42,7 @@ const createMovies = (movieInfo) => {
 
     buttonItems.append(buttonDelete, buttonEdit);
 
-    container.append(movieImage, movieTitle, buttonItems);
+    container.append(movieImage, movieTitle, movieYear, buttonItems);
     return container;
 };
 

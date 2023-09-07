@@ -191,10 +191,11 @@ input:focus {
 
 .movie-info {
     width: 16.875rem;
-    height: 28.125rem;
+    height: 29.375rem;
     background-color: #f0f0f0;
     text-align: center;
     border-radius: 1.25rem;
+    margin-bottom: 1.25rem;
 }
 
 .movie-image {
@@ -292,3 +293,5 @@ input:focus {
         padding-right: 10px;
     }
 }
+
+/* --------------------------------------------------- */

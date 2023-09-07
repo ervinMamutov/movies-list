@@ -5,6 +5,7 @@ const dom = {
     moviesRoot: document.querySelector('.movies-root'),
     error: document.querySelector('.error'),
     buttonCancel: document.querySelector('.btn-cancel'),
-    main: document.querySelector('.main')
+    main: document.querySelector('.main'),
+    years: document.querySelector('.years')
 };
 export default dom;
